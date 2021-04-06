@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "fix": "prettier --write **/*.{css,js,json,ts,tsx}",
     "precommit": "lint-staged",
     "dev": "next dev",
     "build": "next build",
