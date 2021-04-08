@@ -6,61 +6,53 @@ const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>広島大学コンピュータサークル HiCoder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.container}>
+          <h1 className={styles.desc}>HiCoder</h1>
+          <div className={styles.desc}>
+            <span>広島大学 コンピュータサークル HiCoderです！</span>
+            <span>プログラミングに興味がある人を募集しています。</span>
+          </div>
+          <div className={styles.desc}>
+            <span>Zoomでオンライン説明会をします！</span>
+            <span>この google formから申し込みをしてください。</span>
+            <span>次回の説明会は4/9(金)！ぜひ来てください。</span>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <h1 className={styles.desc}>活動</h1>
+          <div className={styles.act}>
+            <span>
+              HiCoderは、広島大学のコンピュータが好きな学生の集まりです。
+            </span>
+            <span>活動は</span>
+            <span>・オンライン雑談会</span>
+            <span>・競技プログラミング</span>
+            <span>・Web開発</span>
+            <span>・LT会</span>
+            <span>これから</span>
+            <span>・もくもく会</span>
+            <span>・ハッカソン</span>
+            <span>・ITトライアスロン</span>
+            <span>を開催する予定です。</span>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <h1 className={styles.desc}>実績</h1>
+          <span>
+            ハッカソン出場、大学別対抗プログラミングコンテストへの出場、LT会の開催
+          </span>
+        </div>
+        <div className={styles.container}>
+          <h1>contact</h1>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <footer className={styles.footer}>Powered by HiCoder</footer>
     </div>
   );
 };
